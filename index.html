@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        
+        const glavText = document.createElement("p");
+        const ul = document.createElement("ul");
+        const a_1 = document.createElement("a");
+        const a_2 = document.createElement("a");
+        const a_3 = document.createElement("a");
+
+        glavText.textContent = 'Здесь есть какой то текст !';
+        a_1.textContent = 'сылка !';
+        a_2.textContent = 'сылка !';
+        a_3.textContent = 'google';
+
+        a_1.href = '#';
+        a_2.href = '#';
+        a_3.href = '#';
+
+        a_1.target = '_blank';
+
+        ul.append(a_1, a_2, a_3);
+
+        glavText.style.border = "2px solid red";
+        glavText.style.width = "600px";
+        glavText.style.padding = "10px";
+        glavText.style.borderRadius = "20px";
+        glavText.style.margin = "auto";
+
+        ul.style.display = "flex";
+        ul.style.justifyContent = "space-between";
+        ul.style.padding = "10px";
+        ul.style.margin = " 0px 760px 0px 760px "; 
+
+        document.body.prepend(glavText, ul);
+
+    </script>
+</body>
+
+</html>
